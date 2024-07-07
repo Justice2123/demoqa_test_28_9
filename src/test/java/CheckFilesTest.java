@@ -21,7 +21,7 @@ public class CheckFilesTest {
 
 
     @Test
-    void CheckPdfFileTest() throws Exception {
+    void checkPdfFileTest() throws Exception {
         try (ZipInputStream zipFile = new ZipInputStream(
                 cl.getResourceAsStream("projectFiles.zip")
         )) {
@@ -37,7 +37,7 @@ public class CheckFilesTest {
 
 
     @Test
-    void CheckXlsFileTest() throws Exception {
+    void checkXlsFileTest() throws Exception {
         try (ZipInputStream zipFile = new ZipInputStream(
                 cl.getResourceAsStream("projectFiles.zip")
         )) {
@@ -62,7 +62,7 @@ public class CheckFilesTest {
 
 
     @Test
-    void CheckCsvFileTest() throws Exception {
+    void checkCsvFileTest() throws Exception {
         try (ZipInputStream zipFile = new ZipInputStream(
                 cl.getResourceAsStream("projectFiles.zip")
         )) {
@@ -81,7 +81,7 @@ public class CheckFilesTest {
 
 
     @Test
-    void CheckJsonFileTest() throws Exception {
+    void checkJsonFileTest() throws Exception {
         try (InputStream is = cl.getResourceAsStream("date.json")) {
             ObjectMapper objectMapper = new ObjectMapper();
             OffersKey offersKey = objectMapper.readValue(is, OffersKey.class);
